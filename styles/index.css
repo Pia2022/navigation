@@ -4,9 +4,22 @@ body {
     background-color: #D8F3DC;
   }
 
+  main {
+    display: flex;
+
+  }
+
   .content-one {
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between    
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    justify-content: space-between;
   }
     
   .nav {
@@ -14,26 +27,30 @@ body {
     background-color: turquoise;
   }
   
+  /* Style the links inside the navigation bar */
   .nav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #47bbdf;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
   
+  /* Change the color of links on hover */
   .nav a:hover {
-    background-color: #95D5B2;
+    background-color: #24e67b;
     color: black;
   }
   
+  /* Add an active class to highlight the current page */
   .nav a.active {
-    background-color: #52B788;
-    color: white;
+    background-color: #fcadd8;
+    color: white/*rgb(171, 172, 240)*/;
   }
   
+  /* Hide the link that should open and close the topnav on small screens */
   .nav .icon {
     display: none;
   }
@@ -60,8 +77,9 @@ body {
     }
   }
   
-  .info {
-    padding-left: 15px;
+  .content-two {
+    flex-direction: column;
+    justify-content: center;    
   }  
   
     

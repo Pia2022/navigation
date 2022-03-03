@@ -12,19 +12,22 @@
 <body>
     <main>
         <section class="content-one">
-            <nav class="nav a">
+            <nav class="nav">
                 <div>
                     <ul>
-                        <li>Home</li>
-                        <li>Cakes</li>
-                        <li>About Us</li>
-                        <li>Contact</li>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="cakes">Cakes</a></li>
+                        <li><a href="about-us">About Us</a></li>
+                        <li><a href="contact">Contact</a></li>
+
+                        <!--used to open and close the topnav on small screens-->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
                     </ul>
                 </div>
             </nav>
         </section>
-        <section>
-            <div class="content-two">
+        <section class="content-two">
+            <div>
                 <img src="images/Pinktcake.webp" alt="Pinktcake">
             </div>
         </section>  

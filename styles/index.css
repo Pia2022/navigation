@@ -82,4 +82,13 @@ body {
     justify-content: center;    
   }  
   
+   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+   function myFunction() {
+    var x = document.getElementById("myNav")
+    if (x.className === "myNav") {
+        x.className += "responsive";
+    } else {
+        x class="myNav";
+    }
+}   
     
